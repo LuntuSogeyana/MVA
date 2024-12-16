@@ -1,0 +1,153 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    color: #333;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer p {
+    font-size: 1em;
+    color: #777;
+    margin-top: 20px;
+}
+
+#upload-section, #video-list {
+    margin-bottom: 40px;
+}
+
+#upload-section h2, #video-list h2 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom right, #ffffff, #f1f1f1);
+}
+
+form label {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    background-color: #fff;
+}
+
+form button {
+    padding: 14px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+#videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.video-item {
+    width: 100%;
+    max-width: 320px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fdfdfd;
+}
+
+.video-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #444;
+    font-weight: 500;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 1em;
+    color: #777;
+}
+
+@media (min-width: 600px) {
+    .video-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 900px) {
+    .video-item {
+        width: calc(33% - 20px);
+    }
+}

@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Environment files
+.env
+
+# Temporary files
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Uploads directory (to avoid pushing uploaded video files)
+uploads/
+
+# Package lock files (optional, if you want to keep them in your repo, remove the next line)
+package-lock.json
+yarn.lock
